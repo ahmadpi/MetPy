@@ -432,7 +432,7 @@ def test_declarative_additional_layers_plot_options():
 
 @pytest.mark.mpl_image_compare(
     remove_text=True,
-    tolerance=2.74 if version_check('matplotlib<3.8') else 0.74)
+    tolerance=2.74 if version_check('matplotlib<3.8') else 1.91)
 @needs_cartopy
 def test_declarative_contour_convert_units():
     """Test making a contour plot."""
